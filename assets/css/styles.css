@@ -408,7 +408,35 @@ background-color: var(--first-color-lighter);
 .qualification_tabs{
   display: flex;
   justify-content: space-between;
+  margin-bottom: var(--mb-2);
 }
+.qualification_button{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor:pointer;
+}
+.qualification_button:hover{
+  color: var(--first-color);
+}
+.qualification_icon{
+  font-size: 1.8rem;
+  margin-right:var(--mb-0-25);
+}
+.qualification_data {
+  width: 50%; /* Each qualification takes half the width of the page */
+  margin: 10px 0; /* Add some margin for spacing */
+  clear: both; /* Clear previous floats */
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+  text-align: right;
+}
+/* Adjust the width and styling as needed */
 
 /*==================== SERVICES ====================*/
 
