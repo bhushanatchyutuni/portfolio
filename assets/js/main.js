@@ -44,8 +44,22 @@ skillsheader.forEach((el)=>{
     el.addEventListener('click',toggleskills)
 })
 /*==================== QUALIFICATION TABS ====================*/
-
-
+const tabs=document.querySelectorAll('[data-target]'),
+      tabcontent=document.querySelectorAll('[data-content]')
+tabs.forEach(tab=>{
+    tab.addEventListener('click',()=>{
+        const targetId=tab.dataset.target;
+        const target=document.querySelector(targetId);
+        tabcontent.forEach(tabcontent=>{
+            tabcontent.classList.remove('qualification_active')
+        })
+        target.classList.add('qualification_active')
+        tab.forEach(tab=>{
+            tab.classList.remove('qualification_active')
+        })
+        tab.classList.add('qualification_active')
+    })
+})
 /*==================== SERVICES MODAL ====================*/
 
 

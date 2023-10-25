@@ -43,13 +43,13 @@
                         <li class="nav_item">
                              <!-- directing to sevices -->
                             <a href="#services" class="nav_link">   
-                                <i class="uil uil-briefcase nav_icon"></i>Services
+                                <i class="uil uil-scenery nav_icon"></i>Certificates
                             </a>
                         </li>
                         <li class="nav_item">
                              <!-- directing to portfolio-->
                             <a href="#portfolio" class="nav_link">   
-                                <i class="uil uil-scenery nav_icon"></i> Portfolio
+                                <i class="uil uil-briefcase nav_icon"></i> Portfolio
                             </a>
                         </li>
                         <li class="nav_item">
@@ -319,21 +319,21 @@
             <span class="section_subtitle">My educational journey</span>
             <div class="qualification_container container">
                 <div class="qualification_tabs">
-                    <div class="qualification_button button--flex">
+                    <div class="qualification_button button--flex qualification_active" data-target="#education">
                         <i class="uil uil-graduation-cap qualification_icon"></i>
                         Education
                     </div>
-                    <div class="qualification_button button--flex">
+                    <div class="qualification_button button--flex" data-target="#work">
                         <i class="uil uil-briefcase-alt qualification_icon"></i>
                         Work
                     </div>
                 </div>
                 <div class="qualification_sections">
-                    <!-- qualifiaction content 1 -->
-                    <div class="qualification_content">
+                    <!-- qualifiaction content 1 for education-->
+                    <div class="qualification_content qualification_active" data-content id="education">
                         <!-- qualifcation 1-->
-                        <div class="qualification_data left">
-                            <div>
+                        <div class="qualification_data ">
+                            <div class="left">
                                 <h3 class="qualification_title">Primary Education</h3>
                                 <span class="qualification_subtitle">Narayana</span>
                                 <div class="qualification_calendar">
@@ -355,7 +355,7 @@
                             </div>
                             <div>
                                 <h3 class="qualification_title">SSC</h3>
-                                <span class="qualification_subtitle">Narayana student</span>
+                                <span class="qualification_subtitle">Narayana school</span>
                                 <div class="qualification_calendar">
                                     <i class="uil uil-calendar-alt"></i>
                                     2017-2018
@@ -363,13 +363,8 @@
                             </div>
                         </div>
                         <!-- qualifcation 3-->
-                        <div class="qualification_data left">
-                            <div></div>
-                            <div>
-                                <span class="qualification_rounder"></span>
-                                <span class="qualification_line"></span>
-                            </div>
-                            <div>
+                        <div class="qualification_data ">
+                            <div class="left">
                                 <h3 class="qualification_title">Intermediate</h3>
                                 <span class="qualification_subtitle">Narayana college</span>
                                 <div class="qualification_calendar">
@@ -377,10 +372,18 @@
                                     2018-2020
                                 </div>
                             </div>
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
                         </div>
                         <!-- qualifcation 4-->
                         <div class="qualification_data right">
                             <div></div>
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <!-- <span class="qualification_line"></span> -->
+                            </div>
                             <div>
                                 <h3 class="qualification_title">Data science</h3>
                                 <span class="qualification_subtitle">GVPCE</span>
@@ -389,18 +392,84 @@
                                     2020-2024
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <!-- qualification content for work -->
+                    <div class="qualification_content" data-content id="work">
+                        <!-- qualification 1 -->
+                        <div class="qualification_data">
+                            <div class="left">
+                                <h3 class="qualification_title">Networking Intern</h3>
+                                <span class="qualification_subtitle">AICTE(online)</span>
+                                <div class="qualification_calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2022(may-jul)
+                                </div>
+                            </div>
                             <div>
                                 <span class="qualification_rounder"></span>
                                 <span class="qualification_line"></span>
+                            </div>
+                        </div>
+                        <!-- qualification 2 -->
+                        <div class="qualification_data right">
+                            <div></div>
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <!-- <span class="qualification_line"></span> -->
+                            </div>
+                            <div>
+                                <h3 class="qualification_title">Cyber security Intern</h3>
+                                <span class="qualification_subtitle">AICTE(online)</span>
+                                <div class="qualification_calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2023(may-jul)
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             </section>
-            <!--==================== SERVICES ====================-->
+            <!--==================== CERTIFICATIONS ====================-->
             <section class="services section" id="services">
-               
+               <h2 class="section_title">Certifications</h2>
+               <span class="section_subtitle">Certifications i acheived</span>
+               <div class="cert_container container grid">
+                        <!-- certification 1 -->
+                <div class="cert_content">
+                    <div>
+                        <i class="uil uil-html5 cert_icon"></i>
+                        <h3 class="cert_title">HTML,CSS,JS in Coursera <br>by IBM</h3>
+                    </div>
+                    <span class="button button--flex button--small button--link cert_button">
+                        View certificate
+                        <i class="uil uil-arrow-right button_icon"></i>
+                    </span>
+                </div>    
+                    <!--certification 2-->
+                    <div class="cert_content">
+                        <div>
+                            <i class="uil uil-medium-m cert_icon"></i>
+                            <h3 class="cert_title">Machine learning basics (apssdc)</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link cert_button">
+                            View certificate
+                            <i class="uil uil-arrow-right button_icon"></i>
+                        </span>
+                    </div>
+                    <!--certification 3 -->
+                    <div class="cert_content">
+                        <div>
+                            <i class="uil uil-google cert_icon"></i>
+                            <h3 class="cert_title">Google data Analytics</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link cert_button">
+                            View certificate
+                            <i class="uil uil-arrow-right button_icon"></i>
+                        </span>
+                    </div> 
+               </div>
             </section>
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
