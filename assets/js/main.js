@@ -60,11 +60,63 @@ tabs.forEach(tab=>{
         tab.classList.add('qualification_active')
     })
 })
-/*==================== SERVICES MODAL ====================*/
+/*==================== CERTIFICATIONS ====================*/
+var certButtons = document.querySelectorAll('.cert_button');
+    // Add a click event listener to each button
+    certButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            // Get the data-link attribute value from the clicked button
+            var link = button.getAttribute('data-link'); 
+            // Redirect to the specified URL when the button is clicked
+            window.open(link,'_blank');
+        });
+    });
+/*==================== PORTFOLIO SWIPER  ====================*/  
+const wrapper = document.querySelector(".swiper-wrapper");
+const slides = document.querySelectorAll(".swiper-slide");
+const totalSlides = slides.length;
+let currentIndex = 0;
 
+function updateSlider() {
+    const slideWidth = slides[currentIndex].offsetWidth;
+    wrapper.style.transform = `translateX(-${slideWidth * currentIndex}px`;
+}
 
-/*==================== PORTFOLIO SWIPER  ====================*/
+const prevButton = document.querySelector(".swiper-button-prev");
+const nextButton = document.querySelector(".swiper-button-next");
 
+nextButton.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateSlider();
+    updateDotStyles();
+});
+
+prevButton.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateSlider();
+    updateDotStyles();
+});
+const dotContainer = document.querySelector(".swiper-dots");
+const dots = Array.from(slides).map(() => document.createElement("div"));
+
+dots.forEach((dot, index) => {
+    dot.classList.add("swiper-dot");
+    dotContainer.appendChild(dot);
+
+    dot.addEventListener("click", () => {
+        currentIndex = index;
+        updateSlider();
+        updateDotStyles();
+    });
+});
+
+function updateDotStyles() {
+    dots.forEach((dot, index) => {
+        dot.classList.toggle("active", index === currentIndex);
+    });
+}
+updateSlider();
+updateDotStyles();
 
 /*==================== TESTIMONIAL ====================*/
 

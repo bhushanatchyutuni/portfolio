@@ -279,6 +279,18 @@ margin-bottom: var(--mb-0-75);
   display:inline-flex;
   align-items:center;
 }
+.button--small{
+  padding: .75rem 1rem;
+}
+.button--link{
+  padding: 0;
+  background-color: transparent;
+  color: var(--first-color);
+}
+.button--link:hover{
+  background-color: transparent;
+  color: var(--first-color-alt);
+}
 /*==================== ABOUT ====================*/
 .about_img{
   width: 150px;
@@ -492,16 +504,65 @@ background-color: var(--first-color-lighter);
   font-weight:var(--font-medium);
 }
 .cert_button{
-  
+  cursor: pointer;
+  font-size: var(--small-font-size);
 }
-
-
-
+.cert_button:hover .button_icon{
+  transform: translateX(.25rem);
+}
 /* Active Modal */
 
 
-/*==================== PORTFOLIO ====================*/
-
+/*==================== PROJECTS ====================*/
+.project_container{
+  overflow: initial;
+}
+.project_content{
+  padding: 0 8rem;
+}
+.project_img{
+  width: 350px;
+  border-radius: 1rem;
+  justify-self: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.project_title{
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+.project_desc{
+  margin-bottom: var(--mb-0-75);
+}
+.project_button:hover .button_icon{
+  transform: translate(.3rem);
+}
+.swiper-container {
+  overflow: hidden;
+  position: relative;
+}
+.swiper-wrapper {
+  display: flex;
+  transition: transform 0.3s;
+}
+.swiper-slide {
+  flex: 0 0 100%;
+}
+.swiper-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.swiper-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #999; 
+  border-radius: 50%;
+  margin: 0 5px; /* Adjust the spacing between dots */
+  cursor: pointer;
+}
+.swiper-dot.active {
+  background-color: #333; /* Active dot color */
+}
 
 /*==================== PROJECT IN MIND ====================*/
 

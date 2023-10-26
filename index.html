@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
         
         <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets\css\swiper-bundle.min.css">
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
@@ -49,7 +49,7 @@
                         <li class="nav_item">
                              <!-- directing to portfolio-->
                             <a href="#portfolio" class="nav_link">   
-                                <i class="uil uil-briefcase nav_icon"></i> Portfolio
+                                <i class="uil uil-briefcase nav_icon"></i> Projects
                             </a>
                         </li>
                         <li class="nav_item">
@@ -442,7 +442,7 @@
                         <i class="uil uil-html5 cert_icon"></i>
                         <h3 class="cert_title">HTML,CSS,JS in Coursera <br>by IBM</h3>
                     </div>
-                    <span class="button button--flex button--small button--link cert_button">
+                    <span class="button button--flex button--small button--link cert_button" data-link="https://www.instagram.com/sivaganeshatchyutuni/">
                         View certificate
                         <i class="uil uil-arrow-right button_icon"></i>
                     </span>
@@ -453,7 +453,7 @@
                             <i class="uil uil-medium-m cert_icon"></i>
                             <h3 class="cert_title">Machine learning basics (apssdc)</h3>
                         </div>
-                        <span class="button button--flex button--small button--link cert_button">
+                        <span class="button button--flex button--small button--link cert_button" data-link="https://github.com/bhushanatchyutuni">
                             View certificate
                             <i class="uil uil-arrow-right button_icon"></i>
                         </span>
@@ -464,17 +464,65 @@
                             <i class="uil uil-google cert_icon"></i>
                             <h3 class="cert_title">Google data Analytics</h3>
                         </div>
-                        <span class="button button--flex button--small button--link cert_button">
+                        <span class="button button--flex button--small button--link cert_button" data-link="https://chat.openai.com/">
                             View certificate
                             <i class="uil uil-arrow-right button_icon"></i>
                         </span>
                     </div> 
                </div>
             </section>
-            <!--==================== PORTFOLIO ====================-->
+            <!--==================== PROJECTS ====================-->
             <section class="portfolio section" id="portfolio">
-                
+                <h2 class="section_title">Projects</h2>
+                <span class="section_subtitle">Technical projects I have done</span>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- project 1 -->
+                        <div class="swiper-slide project_content grid">
+                            <!-- Content for project 1 -->
+                            <img src="assets\img\chat2.png" alt="" class="project_img">
+                            <div class="project_data">
+                                <h3 class="project_title">What'sApp chat Analyzer</h3>
+                                <p class="project_desc">Proficient WhatsApp Chat Analyzer skilled in extracting and analyzing chat data for valuable insights</p>
+                                <a href="#" class="button button--flex button--small project_button">
+                                    Github Code
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- project 2 -->
+                        <div class="swiper-slide project_content grid">
+                            <!-- Content for project 2 -->
+                            <img src="assets\img\bank.jpg" alt="" class="project_img">
+                            <div class="project_data">
+                                <h3 class="project_title">Bank Loan Classifier</h3>
+                                <p class="project_desc">Designed a system to determine whether individuals are eligible for bank loans, assessing their financial worthiness and outstanding dues</p>
+                                <a href="#" class="button button--flex button--small project_button">
+                                    Github Code
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- project 3 -->
+                        <div class="swiper-slide project_content grid">
+                            <!-- Content for project 3 -->
+                            <img src="assets\img\dashboard.png" alt="" class="project_img">
+                            <div class="project_data">
+                                <h3 class="project_title">Placement Dashboard</h3>
+                                <p class="project_desc">Designed and implemented a comprehensive Placement Dashboard to efficiently manage and track job placements for a variety of roles and for different branches.</p>
+                                <a href="#" class="button button--flex button--small project_button">
+                                    Github Code
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-dots"></div>
+                </div>
             </section>
+            
             <!--==================== PROJECT IN MIND ====================-->
             <section class="project section">
 
@@ -496,7 +544,7 @@
         
 
         <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
