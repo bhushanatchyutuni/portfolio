@@ -191,7 +191,9 @@ img{
 }
 
 /* Active link */
-
+.active-link{
+  color: var(--first-color);
+}
 
 /* Change background header */
 
@@ -594,15 +596,80 @@ background-color: var(--first-color-lighter);
  justify-self: center;
 
 }
-/*==================== TESTIMONIAL ====================*/
-
-
 /*==================== CONTACT ME ====================*/
-
-
+.contact_container{
+  row-gap: 3rem;
+}
+.contact_information{
+  display: flex;
+  margin-bottom: var(--mb-2);
+}
+.contact_icon{
+  font-style:2rem;
+  color: var(--first-color);
+  margin-right: var(--font-medium);
+}
+.contact_title{
+  font-style:var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+.contact_subtitle{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+.contact_content{
+  background-color: var(--input-color);
+  border-radius: .5rem;
+  padding: .75rem 1rem .25rem;
+}
+.contact_label{
+  font-style: var(--smaller-font-size);
+  color: var(--title-color);
+}
+.contact_input{
+  width: 100%;
+  background-color: var(--input-color);
+  font-family: var(--body-font);
+  color: var(--text-color);
+  font-style: var(--normal-font-size);
+  border: none;
+  outline: none;
+  padding: .25rem .5rem .5rem 0;
+}
 /*==================== FOOTER ====================*/
+.footer{
+  row-gap: 3.5rem;
+}
 
-
+.footer_bg{
+  background-color: var(--first-color-second);
+  padding: 2rem 0 3rem;
+}
+.footer_title{
+  font-style: var(--h1-font-size);
+  margin-bottom: var(--mb-0-25);
+}
+.footer_subtitle{
+  font-style: var(--small-font-size);
+}
+.footer_links{
+  display:flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.footer_link:hover{
+  color: var(--first-color-lighter);
+}
+.footer_social{
+  font-style: 1.25rem;
+  margin-right: var(--mb-1-5);
+}
+.footer_social:hover{
+  color: var(--first-color-lighter);
+}
+.footer_title,.footer_subtitle,.footer_social,.footer_link{
+  color: #FFF;
+}
 /*========== SCROLL UP ==========*/
 
 
