@@ -760,9 +760,9 @@ background-color: var(--text-color-light);
   .skills_title{
     font-style: var(--normal-font-size);
   }
-  .qualification_data{
-    gap: .5rem;
-  }
+  .qualification_content {
+    margin-bottom: 20px;
+}
   .cert_container{
     grid-template-columns:max-content ;
     justify-content: center;
@@ -777,7 +777,6 @@ background-color: var(--text-color-light);
     padding-top: 50px;
   }
 }
-
 /* For medium devices */
 @media screen and (min-width: 568px) {
   .home_content{
